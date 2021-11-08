@@ -1,6 +1,0 @@
-version: 2
-
-sources:
-- name: ERP_northwind
-tables:
- - name: public_orders
