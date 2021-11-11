@@ -1,0 +1,14 @@
+version: 2
+
+models:
+    - name: fact_orders
+      description: "nossa tabela de fatos"
+      columns:
+          - name: order_id
+            description: "a chave primária original da tabela"
+
+    - name: dim_customers
+      description: "A starter dbt model"
+      columns:
+          - name: customer_id
+            description: "The primary key for this table"
