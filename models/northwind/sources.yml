@@ -1,12 +1,24 @@
 version: 2
 
 sources: 
-  - name: ERP_northwind
+  - name: northwind_etl
     tables:
-        - name: public_orders
-        - name: public_customers
+        - name: orders
+        - name: customers
           columns:
             - name: customer_id
-              tests:
-                - unique
-                - not_null
+        - name: employees
+          columns:
+            - name: employee_id
+        - name: products
+          columns:
+            - name: products_id
+        - name: shippers
+          columns:
+            - name: shipper_id
+        - name: suppliers
+          columns:
+            - name: suplier_id
+        - name: order_details
+          columns:
+            - name: order_id

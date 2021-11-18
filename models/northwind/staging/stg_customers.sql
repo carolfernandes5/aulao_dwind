@@ -17,7 +17,7 @@ with source_data as (
         -- , _sdc_batched_at
         -- , _sdc_extracted_at
 
-         from {{ source('ERP_northwind', 'public_customers') }}
+         from {{ source('northwind_etl', 'customers') }}
 )
 
 Select *

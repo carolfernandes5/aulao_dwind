@@ -16,7 +16,7 @@ source_data as (
     , ship_via as shipper_id
     , ship_address
     , required_date
-    from {{ source('ERP_northwind', 'public_orders') }}
+    from {{ source('northwind_etl', 'orders') }}
 )
 
 Select * from source_data 

@@ -6,9 +6,33 @@ models:
       columns:
           - name: order_id
             description: "a chave primária original da tabela"
-
     - name: dim_customers
-      description: "A starter dbt model"
+      description: "Informacoes de clientes"
       columns:
           - name: customer_id
-            description: "The primary key for this table"
+            description: "Chave de clientes"
+    - name: dim_employees
+      description: "Informacoes de empregados"
+      columns:
+          - name: employeed_id
+            description: "Chave de empregados"
+    - name: dim_products
+      description: "Informacoes de produtos"
+      columns:
+          - name: product_id
+            description: "Chave de produto"
+    - name: dim_shipper
+      description: "Informacoes de entregadores"
+      columns:
+          - name: shipper_id
+            description: "Chave de entregador"
+    - name: dim_supplier
+      description: "Informacoes de fornecedores"
+      columns:
+          - name: supplier_id
+            description: "Chave de fornecedor"
+    - name: fact_order_details
+      description: "Detalhes dos pedidos"
+      columns:
+          - name: order_id
+            description: "Chave do pedido"
